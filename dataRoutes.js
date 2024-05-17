@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const dataController = require("../controllers/controllerData");
-const adminController = require("../controllers/controllerAdmin");
-const authMiddleware = require("../middleware/authMiddleware");
+const dataController = require("../controllerData");
+const adminController = require("../controllerAdmin");
+const authMiddleware = require("../authMiddleware");
 
 router.get("/data", authMiddleware, dataController.findAll);
 router.post("/data", authMiddleware, dataController.create);
