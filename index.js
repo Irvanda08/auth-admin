@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const ticketRoutes = require("./routes/dataRoutes");
+const ticketRoutes = require("./dataRoutes");
 
 const app = express();
 const port = process.env.PORT || 8080;
